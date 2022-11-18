@@ -125,5 +125,5 @@ if(__name__ == '__main__'):
     app.secret_key = "ThisIsNotASecret:p"
     with app.app_context():
         db.create_all()
-    app.run(debug=config['DEBUG'])
+    app.run()
     
